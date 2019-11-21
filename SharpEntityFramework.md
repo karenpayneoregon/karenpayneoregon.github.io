@@ -1,4 +1,7 @@
-## C# Entity Framework code samples
+---
+C# Entity Framework code samples
+---
+
 
 [Entity Framework Core 2x InMemory unit testng for windows forms](https://github.com/karenpayneoregon/EntityFrameworkCoreInMemoryTesting)
 
