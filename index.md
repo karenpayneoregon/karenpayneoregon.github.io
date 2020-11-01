@@ -1,5 +1,5 @@
 # Karen Payne code samples
-A list of various code samples on GitHub
+A list of various code samples on GitHub...
 
 # C# Entity Framework code samples
 
