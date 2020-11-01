@@ -1,6 +1,13 @@
 # Karen Payne code samples
 A list of various code samples on GitHub to learn from for C#, VB.NET. This list is expanded as new repositories are added.
 
+![screenshot](https://github.com/karenpayneoregon/NorthWind-2020/blob/master/assets/Microsoft1.png)
+
+# C# Basic code samples
+
+[Collection of code samples](https://github.com/karenpayneoregon/code-samples-csharp)
+
+
 # C# Entity Framework code samples
 
 
@@ -25,6 +32,8 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 [Entity Framework Core 2x InMemory unit testng for windows forms](https://github.com/karenpayneoregon/EntityFrameworkCoreInMemoryTesting)
 
 [Entity Framework code first DataGridView](https://github.com/karenpayneoregon/EntityFrameworkCodeFirstDataGridView1)
+
+[Entity Framework change connection at runtime](https://github.com/karenpayneoregon/EntityFramework-environment-connections)
 
 
 # VB.NET code samples
