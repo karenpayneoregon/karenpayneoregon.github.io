@@ -11,6 +11,8 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 
 [Basic language extensions](https://github.com/karenpayneoregon/cs-language-extension-basics)
 
+[Language extensions](https://github.com/karenpayneoregon/LanguageExtensions)
+
 [Creating expression trees for lambda where conditons](https://github.com/karenpayneoregon/DynamicExpressions)
 
 [Working with Generic Interfaces](https://github.com/karenpayneoregon/GenericsSharp)
@@ -57,7 +59,13 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 
 [SQL-Server find duplicates (include keys)](https://github.com/karenpayneoregon/SqlServerFindDuplicateRecords)
 
+[Master-Details with SQL-Server](https://github.com/karenpayneoregon/MasterDetailsSqlServerNorthWind)
 
+[Type converters](https://github.com/karenpayneoregon/ConverterLibrary)
+
+[Windows Forms Autocomplete](https://github.com/karenpayneoregon/WindowsFormsAutoComplete)
+
+[DataGridView radio buttons](https://github.com/karenpayneoregon/DataGridViewWithRadioButtons)
 
 
 # C# Entity Framework code samples
@@ -89,6 +97,8 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 
 [Comparing SqlClient, EF6, EF Core Like condition](https://github.com/karenpayneoregon/SqlServerLikeConditionsComparisionEF_EF_Core)
 
+[Entity Framework 6 Enums](https://github.com/karenpayneoregon/EntityFrameworkEnum)
+
 # WPF code samples
 
 TODO
@@ -110,6 +120,8 @@ Various code sample
 [Asynchronous cancellation code sample](https://github.com/karenpayneoregon/async-cancellation-winforms)
 
 [Delegates/Events](https://github.com/karenpayneoregon/CallbacksVisualBasic)
+
+[Fluent Design pattern](https://github.com/karenpayneoregon/FluentPatternVisualBasic)
 
 [Descendants](https://github.com/karenpayneoregon/DescendantsVisalBasicWinForms)
 
@@ -162,6 +174,12 @@ The code samples presented within are for multiple articles and are a work in pr
 [SQL stored procedures primer](https://github.com/karenpayneoregon/SqlServerStoredProceduresVisualBasic)
 
 [Common CheckedListBox operations](https://github.com/karenpayneoregon/VisualBasicCheckedListBoxBasics)
+
+[WinForms Data annotations/validation 1](https://github.com/karenpayneoregon/ClassValidationVisualBasic)
+
+[WinForms Data annotations/validation 2](https://github.com/karenpayneoregon/ClassValidationVisualBasic1)
+
+[Type conversions](https://github.com/karenpayneoregon/ConvertingTypesVisualBasic)
 
 
 
