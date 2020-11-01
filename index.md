@@ -1,5 +1,5 @@
-## Karen's code samples
-
+# Karen Payne code samples
+A list of various code samples on GitHub
 
 # C# Entity Framework code samples
 
@@ -28,5 +28,19 @@
 
 
 # VB.NET code samples
+Various code sample
 
+## Getting started
+
+[Basic to advance code samples](https://github.com/karenpayneoregon/visual-basic-getting-started)
+
+[Asynchronous basic code sample](https://github.com/karenpayneoregon/async-basics-vb)
+
+[Delegates/Events](https://github.com/karenpayneoregon/CallbacksVisualBasic)
+
+[Structuring an Entity Framework project](https://github.com/karenpayneoregon/EntityFrameworkSolutionStructureWindowsForms_VisualBasic)
+
+[ListView code samples](https://github.com/karenpayneoregon/ListViewWindowsFormsVisualBasic)
+
+[Microsoft MS-Access code samples](https://github.com/karenpayneoregon/WorkingWithAccessDatabases)
 
