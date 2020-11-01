@@ -7,6 +7,18 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 
 [Collection of code samples](https://github.com/karenpayneoregon/code-samples-csharp)
 
+[Asynchronous task with option to cancellation a task](https://github.com/karenpayneoregon/async-cancellation-winforms)
+
+[Basic language extensions](https://github.com/karenpayneoregon/cs-language-extension-basics)
+
+[Collection of basic SMO code samples](https://github.com/karenpayneoregon/csharp-smo-basics)
+
+[Increment Alpha Numeric Value](https://github.com/karenpayneoregon/Increment-AlphaNumeric-Value)
+
+[Winforms DataGridView ComboBox code sample](https://github.com/karenpayneoregon/datagridview-combobox-cs)
+
+[Winforms ListView](https://github.com/karenpayneoregon/ListViewWindowsForms)
+
 
 # C# Entity Framework code samples
 
