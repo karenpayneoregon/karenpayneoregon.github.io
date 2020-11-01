@@ -50,6 +50,8 @@ Various code sample
 
 [Custom Window Forms dialog](https://github.com/karenpayneoregon/windows-api-pack)
 
+[Basic TableAdapter getting started](https://github.com/karenpayneoregon/tableadapter-basics-vb)
+
 
 
 
