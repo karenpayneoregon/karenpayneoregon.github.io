@@ -40,6 +40,8 @@ Various code sample
 
 [Structuring an Entity Framework project](https://github.com/karenpayneoregon/EntityFrameworkSolutionStructureWindowsForms_VisualBasic)
 
+[Entity Framework Core VB.NET (ms-access) Windows forms](https://github.com/karenpayneoregon/windows-api-pack)
+
 [Base connection library (VB.NET/C#)](https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet)
 
 [ListView code samples](https://github.com/karenpayneoregon/ListViewWindowsFormsVisualBasic)
@@ -47,6 +49,7 @@ Various code sample
 [Microsoft MS-Access code samples](https://github.com/karenpayneoregon/WorkingWithAccessDatabases)
 
 [Custom Window Forms dialog](https://github.com/karenpayneoregon/windows-api-pack)
+
 
 
 
