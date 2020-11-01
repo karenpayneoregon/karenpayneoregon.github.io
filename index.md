@@ -32,6 +32,8 @@ Various code sample
 
 [Basic to advance code samples](https://github.com/karenpayneoregon/visual-basic-getting-started)
 
+[Best practices](https://github.com/karenpayneoregon/VisualBasicBestPracticesTwo)
+
 [Asynchronous basic code sample](https://github.com/karenpayneoregon/async-basics-vb)
 
 [Asynchronous cancellation code sample](https://github.com/karenpayneoregon/async-cancellation-winforms)
@@ -40,7 +42,15 @@ Various code sample
 
 [Structuring an Entity Framework project](https://github.com/karenpayneoregon/EntityFrameworkSolutionStructureWindowsForms_VisualBasic)
 
-[Entity Framework Core VB.NET (ms-access) Windows forms](https://github.com/karenpayneoregon/windows-api-pack)
+[EF Core 3 projections](https://github.com/karenpayneoregon/ef-core-projections-vb)
+
+[Entity Framework 6 and Entity Framework Core code samples](https://github.com/karenpayneoregon/ef-track-added-modified-vb)
+
+The code samples presented within are for multiple articles and are a work in progress. All code works but in some cases the SQL to build databases and populate tables is ever changing, for instance FrontEndRelational and BackEndRelational code works but have not yet provided the database script.
+
+[Entity Framework (VB.NET) - getting started](https://github.com/karenpayneoregon/ef6-basic-crud-vb)
+
+[Entity Framework custom sorting](https://github.com/karenpayneoregon/EF-Sort-VisualBasic)
 
 [Base connection library (VB.NET/C#)](https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet)
 
@@ -51,6 +61,14 @@ Various code sample
 [Custom Window Forms dialog](https://github.com/karenpayneoregon/windows-api-pack)
 
 [Basic TableAdapter getting started](https://github.com/karenpayneoregon/tableadapter-basics-vb)
+
+[Working with files better](https://github.com/karenpayneoregon/file-read-tips-vb)
+
+[Post build events](https://github.com/karenpayneoregon/copy-db-postbuild-vb)
+
+[Windows Forms delete temp file on closing application](https://github.com/karenpayneoregon/delete-on-close)
+
+[Working with compressed files with VB.NET](https://github.com/karenpayneoregon/compress-files-visual-basic)
 
 
 
