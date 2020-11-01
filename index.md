@@ -1,5 +1,5 @@
 # Karen Payne code samples
-A list of various code samples on GitHub to learn from.
+A list of various code samples on GitHub to learn from for C#, VB.NET
 
 # C# Entity Framework code samples
 
@@ -45,6 +45,8 @@ Various code sample
 [ListView code samples](https://github.com/karenpayneoregon/ListViewWindowsFormsVisualBasic)
 
 [Microsoft MS-Access code samples](https://github.com/karenpayneoregon/WorkingWithAccessDatabases)
+
+[Custom Window Forms dialog](https://github.com/karenpayneoregon/windows-api-pack)
 
 
 
