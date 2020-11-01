@@ -19,6 +19,12 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 
 [Collection of basic SMO code samples](https://github.com/karenpayneoregon/csharp-smo-basics)
 
+[Excel unleashed](https://github.com/karenpayneoregon/ExcelUnleashed)
+
+[Basic operations: Open XML SDK 2.5 Office Word documents](https://github.com/karenpayneoregon/OpenXmlWordPressing)
+
+[unit testing extension methods and validation](https://github.com/karenpayneoregon/UnitTestingValidationExtensionMethods)
+
 [Increment Alpha Numeric Value](https://github.com/karenpayneoregon/Increment-AlphaNumeric-Value)
 
 [Winforms DataGridView ComboBox code sample](https://github.com/karenpayneoregon/datagridview-combobox-cs)
@@ -32,6 +38,10 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 [WinForms data binding](https://github.com/karenpayneoregon/WinFormsDataBinding)
 
 [Insert files into SQL-Server tables](https://github.com/karenpayneoregon/SqlServerInsertFiles)
+
+[SQL-Server export to Excel, Access and XML](https://github.com/karenpayneoregon/ExportDataFromSQL_Server)
+
+[SQL-Server Contraint Violations](https://github.com/karenpayneoregon/SqlContraintViolations)
 
 [WinForms communicate between forms](https://github.com/karenpayneoregon/BroadcastWinForms)
 
@@ -66,6 +76,8 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 [Windows Forms Autocomplete](https://github.com/karenpayneoregon/WindowsFormsAutoComplete)
 
 [DataGridView radio buttons](https://github.com/karenpayneoregon/DataGridViewWithRadioButtons)
+
+[SQL-Server alternate delete rows](https://github.com/karenpayneoregon/AlternateDeleteRecords)
 
 
 # C# Entity Framework code samples
@@ -180,6 +192,9 @@ The code samples presented within are for multiple articles and are a work in pr
 [WinForms Data annotations/validation 2](https://github.com/karenpayneoregon/ClassValidationVisualBasic1)
 
 [Type conversions](https://github.com/karenpayneoregon/ConvertingTypesVisualBasic)
+
+[Read Sql-Server Images](https://github.com/karenpayneoregon/ReadSqlServerImagesInVisualBasic)
+
 
 
 
