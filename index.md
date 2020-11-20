@@ -83,6 +83,8 @@ A list of various code samples on GitHub to learn from for C#, VB.NET. This list
 # C# Entity Framework code samples
 
 
+[Entity Framework Core 5 Getting started](https://github.com/karenpayneoregon/efcore5-getting-started)
+
 [Entity Framework Core 3x New version of NorthWind](https://github.com/karenpayneoregon/NorthWind-2020)
 
 [From data provider to Entity Framework Core 3x](https://github.com/karenpayneoregon/conventional-to-efcore-3)
