@@ -198,8 +198,3 @@ The code samples presented within are for multiple articles and are a work in pr
 [Read Sql-Server Images](https://github.com/karenpayneoregon/ReadSqlServerImagesInVisualBasic)
 
 
-
-
-
-
-
