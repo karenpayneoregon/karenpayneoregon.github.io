@@ -1,7 +1,5 @@
 # About
 
-# About
-
 To validate the VS Code installation.
 
 - Press <kbd>Ctrl</kbd> + <kbd>,</kbd>
