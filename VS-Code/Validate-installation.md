@@ -6,7 +6,7 @@ To validate the VS Code installation.
 - Then when the setting window appears, type tort. Then validate there is a path for “Tortoise SVN: Tortoise SVNProc Exe Path” as shown in figure 1.
   - If you don’t see this then Tortoise is not installed, :x: **STOP** :x: here and notify me.
   - If you see the setting but does not show C:\Program Files\TortoiseSVN\bin\Tortoise.exe, :x: **STOP** :x: here and notify me.
-  - If you do see C:\Program Files\TortoiseSVN\bin\Tortoise.exe **this is right**.
+  - If you do see C:\Program Files\TortoiseSVN\bin\Tortoise.exe :heavy_check_mark: **this is right**.
 
 Next up, make sure these are installed.
 - https://marketplace.visualstudio.com/items?itemName=ilich8086.ColdFusion
