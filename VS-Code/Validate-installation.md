@@ -20,8 +20,13 @@
 - Open VS Code
 - At the bottom of the screen set focus to the Terminal window and paste in the following
   - code --list-extensions | % { "code --install-extension $_" } >InstalledExtensions.txt
-  - This will write installed extensions to a file in the current folder remove >InstalledExtensions.txt to see the list in the terminate window
+  - This will write installed extensions to a file in the current folder remove >InstalledExtensions.txt to see the list in the terminate window (see figure 2)
 
 
+### Figure 1
 
 ![sss](images/figure1.png)
+
+### Figure 2
+
+![sss](images/TerminalWin.png)
