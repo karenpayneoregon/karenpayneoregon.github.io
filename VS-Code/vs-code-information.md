@@ -7,4 +7,4 @@
 
 - [Basic editing](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/basic-editing.md)
 
-remote_theme: jekyll-theme-cayman
+
