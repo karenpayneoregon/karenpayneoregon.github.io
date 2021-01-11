@@ -27,22 +27,22 @@
 - **Open file side by side** : Right click on file in file explorer, select **Open to side**. Do this multiple times, navigate in each and the cursor position is independent of other copies
 
 ### Figure-1
-![sss](images/p1.png)
+![sss](images/P1.png)
 
 ### Figure-2
-![sss](images/p2.png)
+![sss](images/P2.png)
 
 ### Figure-3
-![sss](images/p3.png)
+![sss](images/P3.png)
 
 ### Figure-4
-![sss](images/p4.png)
+![sss](images/P4.png)
 
 ### Figure-5
-![sss](images/p5.png)
+![sss](images/P5.png)
 
 ### Figure-6
-![sss](images/p6.png)
+![sss](images/P6.png)
 
 
 
