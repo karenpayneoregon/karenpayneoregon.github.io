@@ -7,5 +7,6 @@
 
 - [Basic editing](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/basic-editing.md)
 - [Command-line options](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/command-line.md)
+- [SVN/Subversion](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/subversion.md)
 
 
