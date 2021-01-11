@@ -15,6 +15,7 @@
 - Join lines: you have muliple line to fold into one line, highlight lines, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>F1</kbd> type ,<strong>join lines</strong> <kbd>enter</kbd>
 - Copy lines up/down <kbd>Shits</kbd> + <kbd>Alt</kbd> + <kbd>&#8593;</kbd> or <kbd>&#8595;</kbd>
 - Move line up or down <kbd>Alt</kbd> + <kbd>&#8593;</kbd> or <kbd>&#8595;</kbd>
+- Customize your keyboard shortcuts <kbd>Ctrl</kbd> + <kbd>K</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd>
 
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Start typing <strong>goto symbol</strong> show list of symbols, blah not in Cold Fusion, try it in JavaScript
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Start typing part of a file name [see figure 1](#Figure-1)
