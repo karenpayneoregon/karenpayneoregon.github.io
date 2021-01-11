@@ -5,6 +5,7 @@
 
 - [Validate installation](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/Validate-installation.md)
 
-- [Basic editing](VS-Code/basic-editing.md) -
+- [Basic editing](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/basic-editing.md)
+- [Command-line options](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/VS-Code/command-line.md)
 
 
