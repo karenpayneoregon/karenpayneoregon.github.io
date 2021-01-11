@@ -1,6 +1,6 @@
 # Command line
 
-[Home page](https://tinyurl.com/y68k2g97)
+:house: [Home page](https://tinyurl.com/y68k2g97)
 
 VS Code has a powerful command line interface (CLI) which allows you to customize how the editor is launched to support various scenarios.
 

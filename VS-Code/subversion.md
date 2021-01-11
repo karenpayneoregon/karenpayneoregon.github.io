@@ -1,6 +1,6 @@
 # Working with SVN
 
-[Home page](https://tinyurl.com/y68k2g97)
+:house: [Home page](https://tinyurl.com/y68k2g97)
 
 To access SVN, click on the icon below.
 

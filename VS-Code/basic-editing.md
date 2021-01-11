@@ -1,6 +1,6 @@
 # Basic editing
 
-[Home page](https://tinyurl.com/y68k2g97)
+:house: [Home page](https://tinyurl.com/y68k2g97)
 
 [Read the following from Microsoft](https://code.visualstudio.com/docs/editor/codebasics)
 
