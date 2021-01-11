@@ -16,9 +16,9 @@
 
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Start typing <strong>goto symbol</strong> show list of symbols, blah not in Cold Fusion, try it in JavaScript
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Start typing part of a file name [see figure 1](#Figure-1)
-- <kbd>Ctrl</kbd> + <kbd>P</kbd> Type parts of file name for fuzzy [see figure 1](#Figure-2)
+- <kbd>Ctrl</kbd> + <kbd>P</kbd> Type parts of file name for fuzzy [see figure 2](#Figure-2)
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Type as done above, highlight file, press <kbd>Right arrow</kbd> to open file. Repeat till done, last item press <kbd>ENTER</kbd>
-- <kbd>Ctrl</kbd> + <kbd>P</kbd> Type file extension [see figure 1](#Figure-3)
+- <kbd>Ctrl</kbd> + <kbd>P</kbd> Type file extension [see figure 3](#Figure-3)
 - <kbd>Ctrl</kbd> + <kbd>P</kbd> Type as any of the above, press <kbd>Ctrl</kbd> then click to open file to the side of the current open file
 - <kbd>Ctrl</kbd> + <kbd>G</kbd> Go to line, negative number like -1 goes to last line
 - <kbd>Ctrl</kbd> + <kbd>G</kbd> Go to line-column, Row<kbd>:</kbd>Column
