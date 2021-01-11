@@ -30,3 +30,14 @@ Click on the icon and the following appears
 Provides the following.
 
 ![sss](images/subVersionView.png)
+
+By double clicking a file from the editor explorer
+
+
+![sss](images/editorExplorerIcon.png)
+
+Then selecting the sub version icon, double click a line under **FILE HISTORY** to do a comparision between current and an older version of the selected file.
+
+Right click on a file for more options.
+
+![sss](images/FileHistoryOptions.png)
