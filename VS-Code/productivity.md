@@ -26,6 +26,13 @@
 - <kbd>Ctrl</kbd> + <kbd>G</kbd> Go to <strong>Last edit location</strong> take you back to the last place an edit was made.
 - **Open file side by side** : Right click on file in file explorer, select **Open to side**. Do this multiple times, navigate in each and the cursor position is independent of other copies
 
+- Open file side by side : Right click on file in file explorer, select <strong>Open to side</strong>. Do is multiple times, navigate in each and the cursor position is independent of other copies</i>
+- Working with symbols> : Works great if not Cold Fusion. Plenty of features when working say with vaScript.
+- [Breadcrumbs](#Figure-5) : <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>.</kbd> window opens, to filter art typing
+- [Breadcrumbs](#Figure-6) : Navigate to other files</li>
+- <a href="https://github.com/viatsko/awesome-vscode">awesome-vscode</a> list of extensions for vs code (not all, a select zen or so)
+- <a href="https://www.vscodecandothat.com/">VS Code can do that?!</a>
+
 ### Figure-1
 ![sss](images/P1.png)
 
