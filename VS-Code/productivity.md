@@ -1,5 +1,7 @@
 # Quick tip shortcuts
 
+:house: [Home page](https://tinyurl.com/y68k2g97)
+
 - Open a project from Total Commander, traverse to the code, select DOS from the command menu. At the command prompt type <strong>code .</strong> and press <kbd>enter</kbd> to open the project in VS Code
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>F1</kbd> is the life blood. Once invoked, start typing command e.g. <strong>cf</strong> and commands like Cold Fusion toggle comments is shown with it's shortcut or type SVN for SVN commands etc.
 - <kbd>Ctrl</kbd> + <kbd>,</kbd> to open settings where there is an input which you can type in something like <strong>wrap</strong> to get all wrap settings.
