@@ -89,3 +89,5 @@ Move line down <kbd>Alt</kbd> + <kbd>Down</kbd>, move line up <kbd>Alt</kbd> + <
 When in column select mode pressing and holding the <kbd>Alt</kbd> key then using <kbd>Up</kbd>/<kbd>Down</kbd> arrow keys allow column selection. There is a side effect, afterwards moving away from a selection there will be more than one cursor, press <kbd>Esc</kbd> to exit multi cursor. For more on multi cursor see the following [documentation](https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor). See the following [documentation](https://code.visualstudio.com/docs/editor/codebasics#_column-selection-mode) for column select mode.
 
 ![sss](images/k14.png)
+
+[Home page](https://tinyurl.com/y68k2g97)
