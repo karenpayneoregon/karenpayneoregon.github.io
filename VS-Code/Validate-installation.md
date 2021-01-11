@@ -7,6 +7,7 @@
 -  Type tort. Then validate there is a path for “Tortoise SVN: Tortoise SVNProc Exe Path” as shown in figure 1.
     - If you don’t see this then Tortoise is not installed, :x: **STOP** :x: here and notify me.
     - If you see the setting but does not show C:\Program Files\TortoiseSVN\bin\Tortoise.exe, :x: **STOP** :x: here and notify me.
+      -   Note see **figure 3** for registry entry
     - If you do see C:\Program Files\TortoiseSVN\bin\Tortoise.exe :heavy_check_mark: **this is right**.
 
 :radio_button: Next up, make sure these are installed.
@@ -31,3 +32,19 @@
 ### Figure 2
 
 ![sss](images/TerminalWin.png)
+
+### Figure 3
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\TortoiseSVN]
+"LanguageFolderPath"="C:\\Program Files\\TortoiseSVN\\Languages"
+"ProcPath"="C:\\Program Files\\TortoiseSVN\\bin\\TortoiseProc.exe"
+"CachePath"="C:\\Program Files\\TortoiseSVN\\bin\\TSVNCache.exe"
+"TMergePath"="C:\\Program Files\\TortoiseSVN\\bin\\TortoiseMerge.exe"
+"Directory"="C:\\Program Files\\TortoiseSVN\\"
+```
+
+
+
+
