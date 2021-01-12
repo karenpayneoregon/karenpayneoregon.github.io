@@ -4,8 +4,12 @@
 
 Setup a repository from SVN, using mobile claims as an example.
 
-**Note** To try this out see Karen or Bill and ask for the address to mobile claims under CFDEV_VSCODE
+**Notes** 
+- To try this out see Karen or Bill and ask for the address to mobile claims under CFDEV_VSCODE
+- The path used e.g. C:\OED\WebProjects is a suggestion
+- The path under C:\OED\WebProjects\mobile_claims is a suggestion
 
+## Instructions
 - Select a folder e.g. C:\OED\WebProjects
 - Right click 
 - Select Tortoise [see figure 1](#Figure-1)
