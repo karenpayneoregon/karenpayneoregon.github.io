@@ -36,7 +36,3 @@ At this point SVN is setup and ready to use although unless Tortoise extension i
 ![sss](images/T2.png)
 
 
-
-
-
-https://wpoedappl18.oed.state/svn/CFDEV_VSCODE/moble_claims
