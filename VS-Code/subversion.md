@@ -54,6 +54,14 @@ Right click on a file for more options.
 
 If you use [TortoiseSVN](https://tortoisesvn.net/), make sure the option Command Line Tools is checked during installation and C:\Program Files\TortoiseSVN\bin is available in PATH.
 
+
+### Commands
+
+Press <kbd>F1</kbd> for command palette, type in <kbd>SVN</kbd>
+
+![sss](images/svncommands.png)
+
+
 Here are all of the extension settings with their default values. To change any of these, add the relevant Config key and value to your VSCode settings.json file. Alternatively search for the config key in the settings UI to change its value.
 
 ```
