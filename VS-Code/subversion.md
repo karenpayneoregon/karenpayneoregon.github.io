@@ -48,7 +48,7 @@ Right click on a file for more options.
 
 [Install from here](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm)
 
-![sss](images/subVersion.png)
+![sss](images/subversion.png)
 
 ### Windows
 
@@ -56,7 +56,7 @@ If you use [TortoiseSVN](https://tortoisesvn.net/), make sure the option Command
 
 Here are all of the extension settings with their default values. To change any of these, add the relevant Config key and value to your VSCode settings.json file. Alternatively search for the config key in the settings UI to change its value.
 
-```json
+```
 {
   // Whether auto refreshing is enabled
   "svn.autorefresh": true,
