@@ -2,6 +2,8 @@
 
 :house: [Home page](https://tinyurl.com/y68k2g97)
 
+[see extension](#SVN-Extension)
+
 To access SVN, click on the icon below.
 
 ![sss](images/svn-sidebar.png)
@@ -44,7 +46,7 @@ Right click on a file for more options.
 
 ![sss](images/FileHistoryOptions.png)
 
-# SVN Extension
+# SVN-Extension
 
 [Install from here](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm)
 
