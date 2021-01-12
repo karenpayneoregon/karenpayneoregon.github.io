@@ -4,6 +4,8 @@
 
 Setup a repository from SVN, using mobile claims as an example.
 
+**Note** the path used for this is not production code.
+
 - Select a folder e.g. C:\OED\WebProjects
 - Right click 
 - Select Tortoise [see figure 1](#Figure-1)
