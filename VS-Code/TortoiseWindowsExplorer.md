@@ -4,7 +4,7 @@
 
 Setup a repository from SVN, using mobile claims as an example.
 
-**Note** the path used for this is not production code.
+**Note** To try this out see Karen or Bill and ask for the address to mobile claims under CFDEV_VSCODE
 
 - Select a folder e.g. C:\OED\WebProjects
 - Right click 
