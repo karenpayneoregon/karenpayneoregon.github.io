@@ -27,7 +27,7 @@ You can also open projects and files using the platform's URL handling mechanism
 
 <kbd>WindowKey</kbd> + <kbd>R</kbd> to open a folder e.g.
 
-code \\devweb02\HTTP\headfoot\css\bootstrap4.2.1\
+code \\**servername**\some_sub_folder\css\bootstrap4.2.1\
 
 ## Start with a new window
 
