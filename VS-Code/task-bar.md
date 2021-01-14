@@ -4,7 +4,7 @@ Locate the location of VS Code
 
 **Default location**
 
-C:\Users\paynek\AppData\Local\Programs\Microsoft VS Code
+C:\Users\\**login_name**\AppData\Local\Programs\Microsoft VS Code
 
 - Right click on Code.exe
 - Pin to task bar
