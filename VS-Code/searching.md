@@ -12,6 +12,7 @@ Press <kbd>Ctrl</kbd> + <kbd>F</kbd> and type. For regular expressions see the f
 ![sss](images/searchRegularExpressions.png)
 
 
+
 > Tip: You can quickly reuse a previous search term by using `↓` and `↑` to navigate through your search term history.
 
 
