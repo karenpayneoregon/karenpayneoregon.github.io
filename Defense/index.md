@@ -1,5 +1,7 @@
 # Personal protection training
 
+> Consider this post as food for thought when considering personal protection and is a work in progress.
+
 Living in today’s world has become increasingly unsafe for the average citizen from various forms of crime that may lead to great injury of death. Many untrained people believe that the police will protect them while in most cases the police are there after the incident.
 
 What others believe owning a firearm with or without a concealed handgun; license/permit is the key to protecting themselves and their love ones.  Although this sound like a decent plan here are several things to consider.
