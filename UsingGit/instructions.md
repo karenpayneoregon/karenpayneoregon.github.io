@@ -28,7 +28,7 @@ First you need to setup an account which is free.
 
 **Figure 1**
 
-![assets/figure1.png](assets/figure1.png)
+![assets/figure1.png](assets/Figure1.png)
 
 **Figure 2**
 
