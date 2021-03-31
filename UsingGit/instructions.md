@@ -33,3 +33,9 @@ First you need to setup an account which is free.
 **Figure 2**
 
 ![assets/figure1.png](assets/figure2.png)
+
+# To share
+
+Provide the link to your repository, on the code tab have them click `code` which provides options to obtain code locally. Or they can simply examine code online.
+
+![assets/figure1.png](assets/Figure3.png)
