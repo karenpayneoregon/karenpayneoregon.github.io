@@ -1,7 +1,7 @@
 # Internal Visual Studio training update
 
 
-|   	|   	|
+
 |--:	|--	|
 |  :heavy_check_mark:|  For training to be successful, someone must advocate web team members to attend classes unless there are production issues at class time.  | :heavy_check_mark:  	|    Prior to teaching at Revenue without management having developers make time for classes less than 50 percent of developers indicated they were interested. After management made attendance mandatory and completing module one, every developer came back for four more modules. After module four developers were coding with Visual Studio	|
 |:heavy_check_mark:|Prior to teaching at Revenue without management having developers make time for classes less than 50 percent of developers indicated they were interested. After management made attendance mandatory and completing module one, every developer came back for four more modules. After module four developers were coding with Visual Studio |
