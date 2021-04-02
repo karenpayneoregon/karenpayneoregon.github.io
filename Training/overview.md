@@ -5,12 +5,15 @@
 - Course material is broken down into steps averaging two hours each know as modules.
   - **Module 1** – Validate each developer has all required software installed and working
     - Talk on how training will work
-      - Safe environment for everyone :pushpin:
-      - There are no dummy questions.:pushpin:
-      - Mentoring :pushpin:
-      - Not everyone learns at the same pace :pushpin:
-      - Indicate this is a hands-on :pushpin:
-      - Source code will be available as needed and after each module
+      - `Safe` environment for everyone
+      - There are `no dummy` questions.
+      - Mentoring 
+      - Frontend takes a backdoor to backend code
+      - Unit test projects and Console projects willl be used
+        - Frontend projects come down the road
+      - Not everyone learns at the same pace 
+      - Indicate this is a `hands-on` 
+      - Source code will be `available` as needed and after each module
       - Indicate any time a break is needed they will be taken
       - Provide resources
         - Online documentation
