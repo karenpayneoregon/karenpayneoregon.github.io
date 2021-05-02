@@ -91,7 +91,7 @@ This then evolved into the following which uses [Indices and Range](https://docs
 
 ### Scenarios for indices and ranges
 
-From Microsoft
+[From Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/ranges-indexes)
 
 <table>
     <tr>
