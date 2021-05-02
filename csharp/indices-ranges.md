@@ -2,10 +2,22 @@
 
 Working with obtaining a range from a list.
 
-![img](assets/Versions.png)
+![img](assets/IndiceRange1.png)
 
 
-Responded to a forum question about finding string elements between two elements.
+When responded to a forum question about finding string elements between two elements I provided a simple solution then afterwards decided to do a quick writing on going from simple to a version which handles assertions on method parameters and use Indices and Ranges which are features released with C#8.
+
+Sharing code like this can assist with other developer's growth, especially from developers not working in a team that ask questions in forums while nine times out of ten they plug in the code with no regard to is it the proper solution. Then we have those who take time to study code, ask questions and learn.
+
+Although this is not an indepth guide on using Indices and Ranges for the intermediate to advance developer they will get it, use or not use but will usually when not use tuck the code away.
+
+:bulb: Need a decent way to quickly stash code, see 
+
+Microsoft TechNet article [Visual Studio Code stash with VS-Code](https://social.technet.microsoft.com/wiki/contents/articles/54244.visual-studio-code-stash-with-vs-code.aspx).
+
+</br>
+
+---
 
 **Their list**
 
