@@ -1,5 +1,10 @@
 # About
 
+Working with obtaining a range from a list.
+
+![img](assets/Versions.png)
+
+
 Responded to a forum question about finding string elements between two elements.
 
 **Their list**
@@ -138,7 +143,21 @@ namespace Ranges_examples.Classes
     }
 }
 ```
+Results for case insensitive method
 
+```txt
+2010 Fya
+2011 FYA
+2012 FYA
+2013 FYA
+1Q 2014A
+2Q 2014A
+3Q 2014A
+```
+
+# Summary
+
+There are usually options to select from and when there are it's up to the developer to decide which best fits their task, not based on old or new but what best fits along with considerations for performance.
 
 
 
