@@ -160,4 +160,4 @@ Results for case insensitive method
 There are usually options to select from and when there are it's up to the developer to decide which best fits their task, not based on old or new but what best fits along with considerations for performance.
 
 
-
+![**img**](assets/kpmvp1.png)
