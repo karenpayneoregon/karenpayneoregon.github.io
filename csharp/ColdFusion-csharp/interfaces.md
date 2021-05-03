@@ -1,5 +1,10 @@
 # Give students something familar 
 
+![assets/cf_interfaces.png](./assets/CF_C.png)
+
+
+
+
 For part of Visual Studio training I looked at some of the OOP in Cold Fusion 2021 as relating to what a student/developer are comfortable with is paramount as most developers are seasoned Cold Fusion developers.
 
 This allows students to have a warm feeling as they see something familar.
