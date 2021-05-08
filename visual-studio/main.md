@@ -6,4 +6,6 @@
 - [External Tools](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/visual-studio/external-tools.md)
 - Test Explorer
 - Batch Build
+- Solution project locations
+
 
