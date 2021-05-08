@@ -12,9 +12,6 @@ The [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.j
 The following [converter](https://docs.microsoft.com/en-us/dotnet/standard/datetime/system-text-json-support#using-unix-epoch-date-format) works well except for comparing with local time. To work with local time, see the following slightly modified [converter](https://github.com/karenpayneoregon/power-shell-process-cs/blob/master/PowerShellLibrary/Converters/UnixEpochLocalDateTimeConverter.cs#L19).
 
 
-https://docs.microsoft.com/en-us/dotnet/standard/datetime/system-text-json-support
-https://docs.microsoft.com/en-us/dotnet/standard/datetime/system-text-json-support#using-unix-epoch-date-format
-
 # Testing
 
 The following uses PowerShell to get local time along with several other date times.
