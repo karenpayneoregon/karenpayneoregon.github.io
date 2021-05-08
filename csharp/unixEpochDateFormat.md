@@ -1,6 +1,8 @@
 # System.Text.Json date support
 
-:books: [Microsoft docs](https://docs.microsoft.com/en-us/dotnet/standard/datetime/system-text-json-support)
+![**img**](assets/ClockSmall.png)
+
+[Microsoft docs](https://docs.microsoft.com/en-us/dotnet/standard/datetime/system-text-json-support)
 
 The [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=net-5.0) library parses and writes [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) and [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-5.0) values according to the ISO 8601-1:2019 extended profile. [Converters](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-5.0) provide custom support for serializing and deserializing with JsonSerializer. Custom support can also be implemented when using [Utf8JsonReader](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-5.0) and [Utf8JsonWriter](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-5.0).
 
