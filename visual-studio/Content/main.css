@@ -1,0 +1,36 @@
+.main-head {
+    background-color: #009999 !important;
+    height: 42px;
+}
+
+.list-group-item {
+    font-size: 18px;
+}
+
+th {
+    background-color: rgb(0, 139, 139);
+    color: white;
+}
+
+.alert-custom {
+    background-color: rgb(0, 139, 139);
+    color: #fff;
+}
+
+h1 {
+    color: rgb(0, 139, 139);
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 20px;
+    font-family: oswald;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(0, 139, 139), #FFFACD);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size .5s ease;
+}
+
+h1:hover {
+    background-size: 100% 2px;
+}
