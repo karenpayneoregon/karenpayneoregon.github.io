@@ -198,3 +198,7 @@ The code samples presented within are for multiple articles and are a work in pr
 [Read Sql-Server Images](https://github.com/karenpayneoregon/ReadSqlServerImagesInVisualBasic)
 
 
+# Visual Studio training
+
+[Keyboard](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/visual-studio/keyboard.html)
+
