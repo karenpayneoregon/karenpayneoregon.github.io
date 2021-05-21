@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <script src="Scripts/jquery-3.0.0.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+
+        <style>
+            th {
+                background-color: rgb(0, 139, 139);
+                color: white;
+            }
+
+            .alert-custom {
+                background-color: rgb(0, 139, 139);
+                color: #fff;
+            }
+
+            h1 {
+                color: rgb(0, 139, 139);
+                text-transform: uppercase;
+                display: inline-block;
+                font-size: 20px;
+                font-family: oswald;
+                text-decoration: none;
+                background-image: linear-gradient(to right, rgb(0, 139, 139), #FFFACD);
+                background-position: bottom left;
+                background-repeat: no-repeat;
+                background-size: 100% 2px;
+                transition: background-size .5s ease;
+            }
+
+            h1:hover {
+                background-size: 100% 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            For internal Visual Studio training &mdash; some shortcuts are dependent on schema and if any extension overrides standard ones.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="container">
+
+
+            <div class="card-deck mb-3 text-left mt-3">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header text-white" style="background-color: rgb(0, 139, 139);">
+                        <h4 class="my-0 font-weight-normal">
+                            Working the keyboard
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                                <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z" />
+                                <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z" />
+                            </svg>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Code snippets are ready-made snippets of code you can quickly insert into your code.
+                            For example, the <mark>for</mark> code snippet creates an empty <mark>for</mark> loop.
+                            Some code snippets are surround-with code snippets, which enable you to select lines of code,
+                            and then choose a code snippet which incorporates the selected lines of code.
+                            For example, when you select lines of code and then activate the for code snippet,
+                            it creates a for loop with those lines of code inside the loop block. Code snippets can make
+                            writing program code quicker, easier, and more reliable.
+                        </p>
+                        <p>
+                            You can insert a code snippet at the cursor location, or insert a surround-with code snippet around the currently selected code.
+                            The Code Snippet Inserter is invoked through the Insert Code Snippet or Surround With commands on the
+                            IntelliSense menu, or by using the keyboard shortcuts <kbd>CTRL</kbd> + <kbd>K</kbd>, <kbd>Y</kbd> or <kbd>CTRL</kbd> + <kbd>K</kbd>, <kbd>S</kbd> respectively.
+                        </p>
+                        <p class="mt-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            &nbsp;
+                            For snippets below use <kbd>CTRL</kbd> + <kbd>K</kbd> + <kbd>X</kbd> to activate.
+
+                        </p>
+
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+
+                            &nbsp;
+
+                            As <mark>Karen</mark> is teaching there will be several instances that <a href="https://www.jetbrains.com/resharper/" target="_blank" title="ReSharper home page">ReSharper</a> will work a tad different than standard Visual Studio. For those who will be working with Visual Studio on a regular basis this extension is a must.
+
+                        </p>
+                        <img src="assets/context.png" />
+                    </div>
+                </div>
+            </div>
+
+            <h1>Default code snippets</h1>
+            <div class="table-responsive">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Locations to insert</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>#if</td>
+                        <td>Creates a #if directive and a #endif directive.</td>
+                        <td>Anywhere</td>
+                        <td>
+                            <img src="assets/ifDirective.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#region</td>
+                        <td>Creates a #region directive and a #endregion directive.</td>
+                        <td>Anywhere</td>
+                        <td>
+                            <img src="assets/regions.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>attribute</td>
+                        <td>Creates a declaration for a class that derives from <a href="https://docs.microsoft.com/en-us/dotnet/api/system.attribute?view=net-5.0">Attribute</a>.</td>
+                        <td>Inside a namespace (including the global namespace), a class, or a struct.</td>
+                        <td>
+                            <img src="assets/attrub.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>class</td>
+                        <td>Creates a class declaration.</td>
+                        <td>Inside a namespace (including the global namespace), a class, or a struct.</td>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ctor</td>
+                        <td>Creates a constructor for the containing class.</td>
+                        <td>Inside a class.</td>
+                        <td>
+                            <img src="assets/ctor.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>cw</td>
+                        <td>Creates a call to WriteLine.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.<br><br><strong>Note</strong> Console.WriteLine is for console projects, to output in other projects use Debug.WriteLine.</td>
+                        <td>
+                            <img src="assets/cw.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>do</td>
+                        <td>Creates a do while loop.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/do.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>else</td>
+                        <td>Creates an <strong>else</strong> block.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>enum</td>
+                        <td>Creates an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum">enum</a> declaration.</td>
+                        <td>Inside a namespace (including the global namespace), a class, or a struct.</td>
+                        <td>
+                            <img src="assets/enum.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>for</td>
+                        <td>Creates a <strong>for</strong> loop.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/for.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>forr</td>
+                        <td>Creates a <strong>for</strong> loop that <mark>decrements</mark> the loop variable after each iteration.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/forr.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>if</td>
+                        <td>Creates an <strong>if</strong> block.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+
+                            <img src="assets/if.png" alt="" />
+                            <p class="mt-1">Note the <mark>?</mark> which we will discuss</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>prop</td>
+                        <td>Creates an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties">auto-implemented property</a> declaration.</td>
+                        <td>Inside a class or a struct.</td>
+                        <td>
+                            <img src="assets/property.png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>switch</td>
+                        <td>Creates a switch block.</td>
+                        <td>
+                            Inside a method, an indexer, a property accessor, or an event accessor.
+                            <p>There are many other ways to create a switch as in the following <a href="https://social.technet.microsoft.com/wiki/contents/articles/54200.switch-statement-c.aspx" target="_blank">article</a>.</p>
+                        </td>
+                        <td>
+                            <img src="assets/switchConventional.png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>try</td>
+                        <td>Creates a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch">try-catch</a> block.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/try.png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>tryf</td>
+                        <td>Creates a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-finally" target="_blank">try-finally</a> block.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/tryf.png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>using</td>
+                        <td>Creates a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement" target="_blank">using</a> statement.</td>
+                        <td>Inside a namespace (including the global namespace).</td>
+                        <td>
+                            <img src="assets/usingStatement.png" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>while</td>
+                        <td>Creates a while loop.</td>
+                        <td>Inside a method, an indexer, a property accessor, or an event accessor.</td>
+                        <td>
+                            <img src="assets/while.png" />
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <h1>See also</h1>
+            <div class="list-group">
+                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success">Walkthrough: Create a code snippet</a>
+                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/code-snippet-functions?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success">Code snippet functions</a>
+                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/troubleshooting-snippets?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success">Troubleshoot snippets</a>
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,4 +1,8 @@
-# Keyboard shortcuts
+# Common keyboard shortcuts
+
+
+
+# Custom Keyboard shortcuts
 
 
 Visual Studio has several schema mappings were each have their own shortcut combinations along with some Visual Studio extensions e.g. ReSharper as shown in **figure 1**.
