@@ -34,3 +34,18 @@ h1 {
 h1:hover {
     background-size: 100% 2px;
 }
+
+.snackbar_circle {
+    border-radius: 13px;
+    padding: 0 5px;
+}
+
+.checkmark {
+    font-family: arial;
+    font-weight: bold;
+    -ms-transform: scaleX(-1) rotate(-35deg);
+    -webkit-transform: scaleX(-1) rotate(-35deg);
+    transform: scaleX(-1) rotate(-35deg);
+    color: #63BA3D;
+    display: inline-block;
+}
