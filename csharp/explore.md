@@ -2,7 +2,7 @@
 
 <table>
     <tr>
-        <td width="135"><img src="assets/examineCode.png" width="135" height="130"></td>
+        <td width="145"><img src="assets/examineCode.png" width="135" height="130"></td>
         <td style="vertical-align:top">
             Novice developers many times when they don’t know how to accomplish a task will ask how can this be done in one of the many developer forums, get a solution, drop in the solution into code and if the solution works continue their work.<br><br>
             One of the problems with simply dropping code in is that without proper testing this code can produce undesirable results or overly complex.
