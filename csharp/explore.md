@@ -1,8 +1,18 @@
-# Validating code 
+# Developers are also detectives
 
-Novice developers many times when they don’t know how to accomplish a task will ask how can this be done in one of the many developer forums, get a solution, drop in the solution into code and if the solution works continue their work.
+<table>
+    <tr>
+        <td width="135"><img src="assets/examineCode.png" width="135" height="130"></td>
+        <td style="vertical-align:top">
+            Novice developers many times when they don’t know how to accomplish a task will ask how can this be done in one of the many developer forums, get a solution, drop in the solution into code and if the solution works continue their work.<br><br>
+            One of the problems with simply dropping code in is that without proper testing this code can produce undesirable results or overly complex.
+        </td>
+    </tr>
+</table>
 
-One of the problems with simply dropping code in is that without proper testing this code can produce undesirable results or overly complex.
+<br>
+
+
 
 Perfect example, creating a SQL statement by concatenation of various properties of an object while this may work until an apostrophe turns up. Then the developer ends up using string replace to double up on apostrophes, which can work while making code hard to maintain. Some will realize using parameters to a command object is not such a bad idea. Of course if this were Entity Framework this is handled for them while the point is not fully testing a given solution, not using or not using parameters.
 
