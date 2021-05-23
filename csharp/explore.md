@@ -8,6 +8,15 @@
             One of the problems with simply dropping code in is that without proper testing this code can produce undesirable results or overly complex.
         </td>
     </tr>
+    <tr>
+        <td style="vertical-align:top">
+            <img src="assets/exclamation.png">
+            Unit test note
+        </td>
+        <td style="vertical-align:top">
+            There are several unit test methods without asserts on purpose below.
+        </td>
+    </tr>    
 </table>
 
 <br>
@@ -105,7 +114,7 @@ namespace CommonLanguageExtensions
 ```
 
 
-Then a unit test is written
+Then a unit test is written (without assertions, see below)
 
 ```csharp
 [TestMethod]
