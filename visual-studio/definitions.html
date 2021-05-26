@@ -207,28 +207,62 @@
                             and efficiency in a way that their non-generic counterparts cannot. 
                             Generics are most frequently used with collections and the methods that operate on them. The System.Collections.Generic namespace contains several generic-based collection classes. 
                             The non-generic collections, such as ArrayList are not recommended and are maintained for compatibility purposes. For more information, see Generics in .NET.
+
+
+
                         </p>
 
                         <p>
                             <mark>Generic Interfaces</mark> It is often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. 
                             The preference for generic classes is to use generic interfaces, such as IComparable&lt;T&gt; rather than IComparable, in order to avoid boxing and unboxing operations on value types. 
                             The .NET class library defines several generic interfaces for use with the collection classes in the System.Collections.Generic namespace.
+
+                            <code>
+                                <pre id="genericInterfaceBlock" style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">public</span>&nbsp;<span style="color:blue;">interface</span>&nbsp;<span style="color:#2b91af;">IClassActions</span>&lt;<span style="color:#2b91af;">T</span>&gt;
+                                {
+                                &nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;<span style="color:#74531f;">GetById</span>(<span style="color:blue;">decimal</span>&nbsp;<span style="color:#1f377f;">id</span>);
+                                &nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;<span style="color:#74531f;">Update</span>(T&nbsp;<span style="color:#1f377f;">entity</span>);
+                                &nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;<span style="color:#74531f;">Add</span>(T&nbsp;<span style="color:#1f377f;">entity</span>);
+                                &nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;<span style="color:#74531f;">Delete</span>(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">id</span>);
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#74531f;">Commit</span>();
+                                &nbsp;&nbsp;&nbsp;&nbsp;List&lt;T&gt;&nbsp;<span style="color:#74531f;">GetAll</span>();
+                                }</pre>
+                        </code>
+                            
+                            <div class="input-group mb-5">
+                            
+                                <span class="input-group-button">
+                                    <button class="btn btn-success btn-sm" type="button" title="copy to clipboard" data-clipboard-demo data-clipboard-target="#genericInterfaceBlock"> Copy
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                        </svg>
+                                    </button>
+                                </span>
+                            </div>
                         </p>
 
                         <p>
                             Throughout training generics will be used often.
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action list-group-item-success"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generics-and-arrays" target="_blank">Generics and Arrays</a></li>
+                                <li class="list-group-item list-group-item-action list-group-item-success"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-delegates" target="_blank">Generic Delegates</a></li>
+                                <li class="list-group-item list-group-item-action list-group-item-success"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generics-and-attributes" target="_blank">Generic Attributes</a></li>
+                            </ul>
                         </p>
                     </div>
                 </div>
             </div>
 
 
-
             <h1>See also</h1>
             <div class="list-group mb-xl-5 pb-xl-5">
-                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success">Walkthrough: Create a code snippet</a>
-                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/code-snippet-functions?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success">Code snippet functions</a>
-                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/troubleshooting-snippets?view=vs-2019" target="_blank" class="list-group-item list-group-item-action list-group-item-success mb-xl-4">Troubleshoot snippets</a>
+                <a href="#" target="_blank" class="list-group-item list-group-item-action list-group-item-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                    </svg>
+                </a>
             </div>
             <p>
                 &nbsp;
