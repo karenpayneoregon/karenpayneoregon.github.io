@@ -3,6 +3,14 @@
     height: 42px;
 }
 
+pre, code {
+    white-space: pre-line;
+}
+
+mark {
+    background-color: gainsboro;
+}
+
 .list-group-item {
     font-size: 18px;
 }
