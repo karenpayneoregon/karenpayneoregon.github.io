@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Working with data</title>
+
+        <script src="Scripts/jquery-3.0.0.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/visual-studio/Content/main.css">
+        <script src="/visual-studio/Scripts/node_modules/clipboard/dist/clipboard.min.js"></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container-fluid px-0">
+            <div class="row no-gutters mb-2 bg-success">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center border-bottom w-100">
+                        <img src="/visual-studio/assets/header.png" class="pl-lg-5">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            For internal Visual Studio training &mdash; some shortcuts are dependent on schema and if any extension overrides standard ones.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="container">
+
+            <div class="card-deck mb-3 text-left mt-3">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header text-white" style="background-color: rgb(0, 139, 139);">
+                        <h4 class="my-0 font-weight-normal">
+                            Working with data
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            There are two paths for working with databases. Both paths can interact with all major databases.                             
+                        </p>
+
+                        <p>
+                            Microsoft does not provide classes for working with all databases, instead the company behind the database e.g. Oracle for example writes 
+                            the classes to work with their database. There are rules for those writing core classes for working with data. For instance to connect to data
+                            the connection class must have certain methods, properties and events. To read, edit, insert, delete a command class must have 
+                            specific methods, properties and events. Since there are no review process by Microsoft a company may have issues with their provider classes 
+                            which in turn means we are at the mercy of the company who wrote the classes.
+                        </p>
+
+                        <p>
+                            <strong>conventional path</strong>, what the majority of developers start off with and in many cases stay with. Although many will advocate the second path
+                            is better it really depends on the task need to be performed along with the experience of the developer coding.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Code every aspect from creating a connection and command object, which also requires writing SQL statements. 
+                                Data read is stored in list or in a DataTable where a DataTable can be contained in a DataSet for relational data.
+                            </li>
+                            <li>
+                                Minimal code using an Adapter
+                            </li>
+                        </ul>
+
+                        <p>
+                            Example for accessing data 
+                            <code>
+                                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                                <span style="color:gray;">///</span><span style="color:green;">&nbsp;Get&nbsp;all&nbsp;Contact&nbsp;types&nbsp;for&nbsp;DataGridView&nbsp;ComboBox&nbsp;column</span>
+                                <span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;/</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                                <span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;</span><span style="color:gray;">returns</span><span style="color:gray;">&gt;&lt;/</span><span style="color:gray;">returns</span><span style="color:gray;">&gt;</span>
+                                <span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;DataTable&nbsp;<span style="color:#74531f;">ContactTypeTable</span>()
+                                {
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">dt</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;DataTable();
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">using</span>&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">cn</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;SqlConnection(ConnectionString);
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">using</span>&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">cmd</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;SqlCommand()&nbsp;{&nbsp;Connection&nbsp;=&nbsp;cn&nbsp;};
+                                &nbsp;&nbsp;&nbsp;&nbsp;cmd.CommandText&nbsp;=&nbsp;<span style="color:#a31515;">&quot;SELECT&nbsp;ContactTypeIdentifier,&nbsp;ContactTitle&nbsp;&nbsp;FROM&nbsp;dbo.ContactType;&quot;</span>;
+                                &nbsp;&nbsp;&nbsp;&nbsp;cn.Open();
+                                &nbsp;&nbsp;&nbsp;&nbsp;dt.Load(cmd.ExecuteReader());
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;dt;
+                                }</pre>
+                            </code>                       
+                        </p>
+
+                        <p>
+                            The actual connection string for the above is stored within the same class although okay for novice and short term usage connection strings are commonly stored in configuration files.
+
+                            <code>
+                                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">private</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="color:blue;">string</span>&nbsp;ConnectionString&nbsp;=
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;Data&nbsp;Source=.</span><span style="color:#ff007f;">\\</span><span style="color:#a31515;">SQLEXPRESS;&quot;</span>&nbsp;+
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;Initial&nbsp;Catalog=NorthWindAzureForInserts;&quot;</span>&nbsp;+
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;Integrated&nbsp;Security=True&quot;</span>;</pre>
+                            </code>
+                        </p>
+
+
+                        <p>
+                            <a href="https://docs.microsoft.com/en-us/ef/" target="_blank">Entity Framework</a> is the second option which is supported by all major 
+                            databases and as with companies writing classes to access data can have issues. 
+                            Here are the <a href="https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli" target="_blank">providers</a>.
+                        </p>
+
+                        <p>
+                            The following mirrors the above code sample to perform the exact same operation.
+                        </p>
+
+                        <code>
+                            <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;List&lt;ContactType&gt;&nbsp;<span style="color:#74531f;">ContactTypes</span>()
+                            {
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">using</span>&nbsp;(<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">context</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;NorthWindContext())
+                            &nbsp;&nbsp;&nbsp;&nbsp;{
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;context.ContactType.AsNoTracking().ToList();
+                            &nbsp;&nbsp;&nbsp;&nbsp;}
+                            }</pre>
+                        </code>
+                        
+                        <p>
+                            Although upon first inspection the Entity Framework code has a smaller footprint there is a good deal of code behind which is done usually using a Visual
+                            Studio free or paid for extension. Code generated by one of these extensions produces clear, easy to understand code. Also, code generated by an 
+                            extension can rerun and not distrub cusom code when done right and is easy.
+                        </p>
+
+                        <p>
+                            Connecting to a database
+                            <code>
+                                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">protected</span>&nbsp;<span style="color:blue;">override</span>&nbsp;<span style="color:blue;">void</span>&nbsp;<span style="color:#74531f;">OnConfiguring</span>(DbContextOptionsBuilder&nbsp;<span style="color:#1f377f;">optionsBuilder</span>)
+                                {
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(!optionsBuilder.IsConfigured)
+                                &nbsp;&nbsp;&nbsp;&nbsp;{
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">/*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Read&nbsp;connection&nbsp;string&nbsp;from&nbsp;client&nbsp;calling&nbsp;this&nbsp;class
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;optionsBuilder.UseSqlServer(<span style="color:red;">Helper</span>.GetConnectionString());
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                }</pre>
+                            </code>
+
+                        </p>
+
+
+                        <p>
+                            Connection string stored in a json file which has two environments and can had been done with one, two or three.
+                            <code>
+                                    <pre  class="border border-info" style="font-family:Consolas;font-size:13px;color:black;background:white;">{
+                                    &nbsp;&nbsp;<span style="color:#2e75b6;">&quot;ConnectionStrings&quot;</span>:&nbsp;{
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#2e75b6;">&quot;DevelopmentConnection&quot;</span>:&nbsp;<span style="color:#a31515;">&quot;Server=.</span><span style="color:#ff007f;">\\</span><span style="color:#a31515;">SQLEXPRESS;Database=NorthWind2020;Integrated&nbsp;Security=true&quot;</span>,
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#2e75b6;">&quot;ProductionConnection&quot;</span>:&nbsp;<span style="color:#a31515;">&quot;Server=.</span><span style="color:#ff007f;">\\</span><span style="color:#a31515;">SQLEXPRESS;Database=NorthWind2020;Integrated&nbsp;Security=true&quot;</span>
+                                    &nbsp;&nbsp;},
+                                    &nbsp;&nbsp;<span style="color:#2e75b6;">&quot;Environment&quot;</span>:&nbsp;{
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#2e75b6;">&quot;Production&quot;</span>:&nbsp;<span style="color:blue;">false</span>
+                                    &nbsp;&nbsp;}
+                                    }</pre>
+                            </code>
+
+                        </p>
+            
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-deck mb-3 text-left mt-3">
+
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header text-white" style="background-color: rgb(0, 139, 139);">
+                        <h4 class="my-0 font-weight-normal">
+                            Which to choice
+                        </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>
+                            For developers in the course building web solutions, Entity Framework Core while for utility work either conventional or Entity Framework dependent on the task and clients.
+                        </p>
+
+                        <ul>
+                            <li>ASP.NET Core projects are in the sense of a word Entity Framework Core ready</li>
+                            <li>By placing data centric code into a class project both web and desktop solutions can share the code base</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-left mt-3">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header text-white" style="background-color: rgb(0, 139, 139);">
+                        <h4 class="my-0 font-weight-normal">
+                            Entity Framework pro/cons
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Pros</strong></p>
+                        <ul>
+                            <li>Works for desktop, web and mobile (cross platform)</li>
+                            <li>Abundant resources</li>
+                            <li>object-relational mapper (O/RM)</li>
+                            <li>Code first generators</li>
+                            <li>Change tracker</li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/performance/performance-diagnosis?tabs=simple-logging%2Cload-entities#benchmarking-with-ef-core" target="_blank">Benchmarking</a> using <a href="https://benchmarkdotnet.org/index.html" target="_blank">Benchmarkdotnet</a> (DAS may block this site) so go here <a href="https://github.com/dotnet/BenchmarkDotNet" target="_blank">GitHub repo</a> </li>
+                            <li>Various forms of logging which includes viewing paramter values</li>
+                            <ul>
+                                <li><a href="https://docs.microsoft.com/en-us/ef/core/performance/performance-diagnosis?tabs=simple-logging%2Cload-entities#identifying-slow-database-commands-via-logging" target="_blank">Identifying slow database commands via logging</a></li>
+                            </ul>
+                            <li>Fine tuning of columns (configurations for models)</li>
+                            <li>Lightweight</li>
+                            <li>Maintainability, easy-to-understand code, without creating a large data access layer.</li>
+                            <li>Relations: one to one many to many</li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/modeling/spatial" target="_blank">Spatial Data</a> which represents the physical location and the shape of objects</li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/testing/in-memory" target="_blank">In-Memory Database</a> testing with the understanding it's not a real database'</li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/performance/advanced-performance-topics?tabs=with-constant#query-caching-and-parameterization" target="_blank">Query caching and parameterization</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/performance/advanced-performance-topics?tabs=with-constant#dynamically-constructed-queries" target="_blank">Dynamically-constructed queries</a> &mdash; advance topic</li>
+                            <li><a href="https://docs.microsoft.com/en-us/ef/core/extensions/" target="_blank">Tools</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0" target="_blank">INotifyPropertyChanged</a> Interface</li>
+                        </ul>
+            
+                        <p><strong>Cons</strong></p>
+                        <ul>
+                            <li>Works best with primary keys</li>
+                            <li>When table schemas change, models need to be regen's (Is this really a disadvantage?)</li>
+                            <ul>
+                                <li>Actually a regen or a <a href="https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli" target="_blank">migration</a> will handle this for us</li>
+                            </ul>
+                            <li> <a href="https://docs.microsoft.com/en-us/ef/core/modeling/keyless-entity-types?tabs=data-annotations" target="_blank">Keyless Entity Types</a> fall into pros and cons</li>
+                        </ul>
+
+                        <p class=" p-2 bg-secondary text-light shadow p-3 mb-5  rounded">
+                            Some will praise EF Core while others will bash EF Core. For instance, some will say its syntax is complicated, which is dependent on the developer’s skill level or willingness to adapt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-deck mb-3 text-left mt-3">
+
+                <div class="card mb-4 box-shadow">
+
+                    <div class="card-header text-white" style="background-color: rgb(0, 139, 139);">
+                        <h4 class="my-0 font-weight-normal">
+                            Cold Fusion to C#
+                        </h4>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p>
+                            <strong>Cold Fusion</strong>
+                        </p>
+
+                        <img src="/visual-studio/assets/cfGetTrans.png" alt="">
+         
+                        <p class="mt-md-4 pb-sm-0">
+                            <strong>C#</strong>
+                        </p>
+
+                        <code>
+                            <pre class="border border-info" style="font-family:Consolas;font-size:13px;color:black;background:white;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="color:blue;">async</span>&nbsp;Task&lt;IccTran&gt;&nbsp;<span style="color:#74531f;">GetTransaction</span>(<span style="color:blue;">decimal</span>&nbsp;<span style="color:#1f377f;">id</span>,&nbsp;LanguageCodes&nbsp;<span style="color:#1f377f;">language</span>)
+                            {
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">code</span>&nbsp;=&nbsp;language.ToText();
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">await</span>&nbsp;<span style="color:blue;">using</span>&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">context</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;Context();
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;<span style="color:blue;">await</span>&nbsp;context.IccTrans.FirstOrDefaultAsync(<span style="color:#1f377f;">trans</span>&nbsp;=&gt;&nbsp;trans.Id&nbsp;==&nbsp;id&nbsp;&amp;&amp;&nbsp;trans.TrLanguageCode&nbsp;==&nbsp;code);
+                            
+                            }</pre>
+                        </code>
+
+                        <p>
+                            <strong>Language code</strong> for above
+                        </p>
+
+
+                        <code>
+                            <pre class="border border-info" style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">public</span>&nbsp;<span style="color:blue;">enum</span>&nbsp;<span style="color:#2b91af;">LanguageCodes</span>
+                            {
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;English&nbsp;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;/</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;English&nbsp;=&nbsp;1,
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;Spanish&nbsp;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;/</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Spanish&nbsp;=&nbsp;2
+                            }</pre>
+                        </code>
+
+                        <p>
+                            <strong>Usage</strong> in a unit test method
+
+                            <code>
+                                <pre class="border border-info" style="font-family:Consolas;font-size:13px;color:black;background:white;">[TestMethod]
+                                [TestTraits(Trait.OracleEntityFrameworkCore)]
+                                <span style="color:blue;">public</span>&nbsp;<span style="color:blue;">async</span>&nbsp;Task&nbsp;<span style="color:#74531f;">ValidateGetTransactionByIdentifierAndLanguageTestMethodNotExistsTask</span>()
+                                {
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;arrange</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">transIdentifier</span>&nbsp;=&nbsp;64381986;
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">completeTime</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;DateTime(2020,&nbsp;8,&nbsp;4,&nbsp;11,&nbsp;15,&nbsp;0);
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">languageCode</span>&nbsp;=&nbsp;LanguageCodes.Spanish;
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;act</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">var</span>&nbsp;<span style="color:#1f377f;">transaction</span>&nbsp;=&nbsp;<span style="color:blue;">await</span>&nbsp;TransactionOperations.GetTransaction(transIdentifier,&nbsp;languageCode);
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;assert</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Assert.IsTrue(transaction&nbsp;<span style="color:blue;">is</span>&nbsp;<span style="color:blue;">null</span>);
+                                
+                                }</pre>
+                            </code>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1>See also</h1>
+            <div class="list-group mb-xl-5 pb-xl-5">
+                <a href="#" target="_blank" class="list-group-item list-group-item-action list-group-item-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                    </svg>
+                </a>
+            </div>
+            <p>
+                &nbsp;
+                <!-- TODO work out solution for sticky footer -->
+            </p>
+        </div>
+
+        <div class="container">
+            <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-success">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://karenpayneoregon.github.io/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                </svg>
+                                Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TODO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">TODO</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <script>
+            $(document).ready(function (e) {
+
+
+                $("pre1 code1").each(function () {
+                    var html = $(this).html();
+                    var pattern = html.match(/\s*\n[\t\s]*/);
+                    $(this).html(html.replace(new RegExp(pattern, "g"), '\n'));
+                });
+
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 2000);
+
+
+                var clipboard = new ClipboardJS('.btn');
+                clipboard.on('success', function (e) {
+                    e.clearSelection();
+                });
+
+            });
+        </script>
+    </body>
+
+</html>
