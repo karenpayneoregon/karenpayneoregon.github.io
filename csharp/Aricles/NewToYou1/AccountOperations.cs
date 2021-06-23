@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace WindowsFormsApp2
+namespace CodeSample
 {
     public class AccountOperations
     {
