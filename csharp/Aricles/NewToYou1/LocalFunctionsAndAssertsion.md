@@ -2,6 +2,8 @@
 
  Coders nine times out of ten when first starting to write code when stuck seek advice in various forums. The majority of replies that answer a question are not robust and the coder asking tend to not dissect the code or see if the code can be improved. Couple this with no unit testing is a recipe for issues down the road.
 
+ :heavy_check_mark: Both finished classes and file are in this folder.
+
  A good example, coder want to read a comma-delimited file as shown below.
 
  ```
