@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <title>Off canvas</title>
+
+        <script src="scripts/jquery-3.6.0.js"></script>
+        <script src="scripts/umd/popper.min.js"></script>
+
+        <link href="content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="content/bootstrap/css/local/offCanvas.css">
+        <script src="scripts/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="SideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <div class="container m-lg-4">
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Put some stuff here
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("SideNavigation").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("SideNavigation").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+
+
+        </script>
+    </body>
+
+</html>
