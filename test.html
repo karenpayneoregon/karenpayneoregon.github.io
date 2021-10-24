@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Coding better part-1</title>
+
+        <link rel="stylesheet" href="bootstrap-5.1.3/main.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/css/bootstrap.css">
+        <script src="bootstrap-5.1.3/jquery3.0.0.0/jquery-3.0.0.min.js"></script>
+        <script src="bootstrap-5.1.3/css/umd/popper.js"></script>
+        <script src="bootstrap-5.1.3/inject/bottomNavigation.js"></script>
+        <script src="bootstrap-5.1.3/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="bootstrap-5.1.3/cornersPlain.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/_gistscustom.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/icons-1.6.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/css/offCanvas.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/css/">
+
+        <style>
+            /* :root
+{
+    --bs-primary: rgba(95, 5, 255, 1);
+    --bs-secondary: rgb(159, 105, 253);serif;
+} */
+
+            .bg-white {
+                background-color: #ffffff;
+            }
+
+            .bg-primary {
+                background-color: var(--bs-primary) !important;
+            }
+
+            .text-primary {
+                color: var(--bs-primary) !important;
+            }
+
+
+            .accordion-item {
+                background-color: #fff;
+                border: none;
+
+            }
+
+            .accordion-button {
+                background-color: #f2F2F2;
+                box-shadow: none;
+                border: none;
+                padding: 20px 50px;
+                margin: 4px 0;
+            }
+
+            .accordion-button:not(.collapsed) {
+                border-bottom: 4px solid var(--bs-primary);
+                color: var(--bs-primary);
+                font-weight: bold;
+                background-color: #f2F2F2;
+            }
+
+            .accordion-button:focus {
+                z-index: 3;
+                border-color: none;
+                outline: 0;
+                box-shadow: none;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                background-image: url("assets/openGreen.png");
+                transform: rotate(-180deg);
+            }
+
+            .accordion-button::after {
+                flex-shrink: 0;
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-left: auto;
+                content: "";
+                background-image: url("assets/closedGreen.png");
+                background-repeat: no-repeat;
+                background-size: 1.25rem;
+                transition: transform .2s ease-in-out;
+
+            }
+
+            mark {
+                background-color:seashell;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <div class="container-fluid px-0">
+
+            <div class="row no-gutters mb-2 bg-success">
+
+                <div class="col-12">
+                    <div class="d-flex justify-content-center border-bottom w-100">
+                        <img src="assets/header.png" class="pl-lg-5">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container d-lg-none">
+            <p class="pb-5"></p>
+        </div>
+
+        <h1 class="mb-3">code better part-1</h1><br>
+
+        <div class="m-4">
+            <div class="accordion" id="myAccordion">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What is HTML?</button>
+                    </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>HTML stands for <mark>HyperText Markup Language</mark> . HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. What is Bootstrap?</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                            <div id="b-placeholder">sss</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is CSS?</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row no-gutters" style="height: 80px;">
+            </div>
+        </div>
+
+
+
+        <div id="bottomArea" class="container">
+        </div>
+
+        <script>
+            $(document).ready(function (e) {
+
+                $bottomNavigation.show();
+
+                $(function () {
+                    $("#b-placeholder").load("/section1.html");
+                });                
+
+            });
+        </script>
+
+    </body>
+
+</html>

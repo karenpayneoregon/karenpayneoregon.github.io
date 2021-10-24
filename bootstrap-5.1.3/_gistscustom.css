@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Open+Sans');
 body {
     margin: 20px;
-    font: 12px 'Open Sans', sans-serif;
+    font: 16px 'Open Sans', sans-serif;
 }
 
 body .gist .gist-file {
