@@ -1,80 +1,108 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <title>Coding better part-1</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>Coding better part-1</title>
 
-    <script src="visual-studio/Scripts/jquery-3.0.0.js"></script>
-    <script src="/visual-studio/Scripts/inject/bottomNavigation.js"></script>
-    <script src="/bootstrap-5.1.3/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="/bootstrap-5.1.3/css/bootstrap.css">
-    <link rel="stylesheet" href="/visual-studio/Content/main.css">
-    <link rel="stylesheet" href="/visual-studio/Content/cornersPlain.css">
-    <link rel="stylesheet" href="/Bookmarks/content/_gistscustom.css">
-    <link rel="stylesheet" href="/bootstrap-5.1.3/icons-1.6.1/font/bootstrap-icons.css">
-</head>
+        <script src="visual-studio/Scripts/jquery-3.0.0.js"></script>
+        <script src="/bootstrap-5.1.3/css/umd/popper.js"></script>
+        <script src="/visual-studio/Scripts/inject/bottomNavigation.js"></script>
+        <script src="/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.1.3/css/bootstrap.css">
+        <link rel="stylesheet" href="/visual-studio/Content/main.css">
+        <link rel="stylesheet" href="/visual-studio/Content/cornersPlain.css">
+        <link rel="stylesheet" href="/Bookmarks/content/_gistscustom.css">
+        <link rel="stylesheet" href="/bootstrap-5.1.3/icons-1.6.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/bootstrap-5.1.3/css/offCanvas.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="container-fluid px-0">
+        <div class="container-fluid px-0">
 
-        <div class="row no-gutters mb-2 bg-success">
+            <div class="row no-gutters mb-2 bg-success">
 
-            <div class="col-12">
-                <div class="d-flex justify-content-center border-bottom w-100">
-                    <img src="/visual-studio/assets/header.png" class="pl-lg-5">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center border-bottom w-100">
+                        <img src="/visual-studio/assets/header.png" class="pl-lg-5">
+                    </div>
                 </div>
+
             </div>
 
         </div>
 
-    </div>
 
-
-    <div class="container d-lg-none">
-        <p class="pb-5"></p>
-    </div>
-
-
-    <img src="assets/CodeBetterTitle.png" />
-
-    <div class="container-fluid mt-md-4 m-lg-2">
-
-        <h1 class="mb-3">better programmer part-1</h1><br>
-
-        <div class="shadow p-3 mb-5 rounded" style="width: fit-content;">
-            This is a continuing series on how to begin a journey using Microsoft ecosystem of tools and languages beginning with C# and where working with data, SQL-Server and Entity Framework Core
+        <div class="container d-lg-none">
+            <p class="pb-5"></p>
         </div>
 
-        <div>
-            When first starting a journey into writing applications of any type there are several fundamentals to adhere too.
+
+        <img src="assets/CodeBetterTitle.png" />
+
+        <div class="container-fluid mt-md-4 m-lg-2">
+
+            <h1 class="mb-3">better programmer part-1</h1><br>
+
+            <div class="shadow p-3 mb-5 rounded" >
+                This is a continuing series on how to begin a journey using Microsoft ecosystem of tools and languages beginning with C# and where working with data, SQL-Server and Entity Framework Core
+            </div>
+
+            <div>
+                When first starting a journey into writing applications of any type there are several fundamentals to adhere too.
+            </div>
+
+            <ul>
+                <li>qqq</li>
+            </ul>
+
+        </div>
+        <div class="container-fluid mt-lg-5 mb-lg-4">
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                Toggle first element
+            </a>
         </div>
 
-        <ul>
-            <li>qqq</li>
-        </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card">
+                            <div class="card-header  text-white" style="background-color: #339966">
+                                <i class="bi bi-exclamation-diamond"></i>
+                            </div>
+                            <div class="card card-body">
+                                <p>Usted actualmente tiene un reclamo activo bajo el programa de Asistencia de Desempleo por la Pandemia (PUA por sus siglas en ingl&eacute;s).</p>
+                                <p>Si est&aacute; intentando presentar su certificaci&oacute;n de reclamo semanal para el programa PUA, <a href='https://secure.emp.state.or.us/ocs4/index.cfm?lang=S'>visite el Sistema de reclamos en l&iacute;nea</a>. Luego, seleccione el bot&oacute;n azul de Asistencia de Desempleo por la Pandemia (PUA) para comenzar a presentar su reclamo semanal de PUA.</p>
+                                <p>Si cree que tiene un reclamo de desempleo regular y recibe este mensaje por error, ll&aacute;menos al 877-345-3484, de lunes a viernes, de 7 a. M. A 6 p. M., O llene el <a href='https://unemployment.oregon.gov/contact-us'>formulario de contacto</a> del Departamento de empleo de Oregon para que podamos ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-
-
-    <div class="container">
-        <div class="row no-gutters" style="height: 80px;">
+            </div>
         </div>
-    </div>
 
 
-    <div id="bottomArea" class="container">
-    </div>
+        <div class="container">
+            <div class="row no-gutters" style="height: 80px;">
+            </div>
+        </div>
 
-    <script>
-        $(document).ready(function (e) {
 
-            $bottomNavigation.show();
 
-        });
-    </script>
+        <div id="bottomArea" class="container">
+        </div>
 
-</body>
+        <script>
+            $(document).ready(function (e) {
+
+                $bottomNavigation.show();
+
+            });
+        </script>
+
+    </body>
 
 </html>

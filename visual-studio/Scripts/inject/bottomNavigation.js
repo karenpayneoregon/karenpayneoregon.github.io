@@ -5,8 +5,8 @@ $bottomNavigation = function () {
     var show = function () {
 
         var bottomHtml = 
-        '    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-success" >' +
-        '        <a class="navbar-brand" href="#">Navigation</a>' +
+        '    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-success ml-2" >' +
+        '        &nbsp;&nbsp;&nbsp;<a class="navbar-brand" href="#">Navigation</a>' +
         '        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">' +
         '            <span class="navbar-toggler-icon"></span>' +
         '        </button>' +
