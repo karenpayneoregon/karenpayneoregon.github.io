@@ -3,9 +3,9 @@
     height: 42px;
 }
 
-pre, code {
+/* pre, code {
     white-space: pre-line;
-}
+} */
 
 mark {
     background-color: gainsboro;
