@@ -1,22 +1,23 @@
 # Entity Framework Core Debug view
 
+One of the nice features in EF Core 5 is ShortView and LongView from [DbContext.ChangeTracker.DebugView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.changetracker.debugview?view=efcore-5.0)
+
+Which expands de
 ## ShortView
 
 ```
-BusinessEntityPhone {BusinessEntityPhoneId: 1} Deleted
 BusinessEntityPhone {BusinessEntityPhoneId: 1} Deleted
 Products {ProductId: 3} Modified FK {CategoryId: 2} FK {SupplierId: 1}
 Products {ProductId: 4} Unchanged FK {CategoryId: 2} FK {SupplierId: 2}
 Products {ProductId: 5} Unchanged FK {CategoryId: 2} FK {SupplierId: 2}
 Suppliers {SupplierId: 1} Unchanged FK {CountryIdentifier: 19}
 Suppliers {SupplierId: 2} Unchanged FK {CountryIdentifier: 20}
-
 original name: 'Aniseed Syrup' current: 'ABC'
 The program '[28344] SqlServerConsoleApp.exe' has exited with code 0 (0x0).
 
 ```
 
-## LomgView
+## LongView
 
 ```
 BusinessEntityPhone {BusinessEntityPhoneId: 1} Deleted
