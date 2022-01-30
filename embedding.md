@@ -8,7 +8,7 @@ Which permits a human-readable view of entities being tracked.
 
 We can take this output and return only information which specific to what we want to view.
 
-## Important
+## :warning: Important
 Before continuing, understand the code which follows may not work as expected if and when the views change from current implementation to a future implementation. Even if the implementation for the views change a developer can alter the code below to match new implementation of these views.
 
 # Examples
