@@ -1,5 +1,7 @@
 # Entity Framework Core Debug view
 
+![./assets/debug1.png](assets/debug1.png)
+
 One of the nice features in EF Core 5 is ShortView and LongView from [DbContext.ChangeTracker.DebugView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.changetracker.debugview?view=efcore-5.0)
 
 Which permits a human-readable view of entities being tracked.
@@ -89,6 +91,21 @@ private static Dictionary<int, int> YearsReplaceDictionary => new()
     [1999] = 2009
 };
 ```
+
+Or we could avoid a missing year with the following. 
+
+If this is used make sure other developers on your team understand this code.
+
+```csharp
+Dictionary<int, int> YearsReplaceDictionary = Enumerable.Range(1990, 10)
+    .Select(index => new
+    {
+        Old = index,
+        New = index + 10
+    })
+    .ToDictionary(item => item.Old, item => item.New);
+```    
+
 
 Run the code again and all is good, we can now save changes.
 
@@ -515,6 +532,13 @@ The method `PropertiesCount` can be used to define `chunk size` for
 public static string CustomViewByChunks(this DebugView sender, string[] includeTokens, string[] excludeTokens, int chunkSize)
 ```
 
+Example for `Orders` model.
+
+```csharp
+UtilityHelpers.GetProperties(typeof(Order));
+```
+
+
 ```csharp
     public class UtilityHelpers
     {
@@ -542,3 +566,14 @@ public static string CustomViewByChunks(this DebugView sender, string[] includeT
             => $"var {varName} = new[] {{{string.Join(",", t.GetProperties().Select(propInfo => $"\"{propInfo.Name}\"").ToArray())}}};";
     }
     ```
+
+# Summary
+
+Language extensions have been presented to provide a more condensed view of data being tracked by EF Core change tracker, customized to your specific needs prior to saving data back to the database for a first run or when a save fails to work as expected.
+
+Other options are to setup logging in your DbContext to expose the underlying SQL. And of course writing unit test with in-memory database, SqlLite or by mocking data.
+
+And keep in mind that the views provided may change down the road, if so roll with them or modify the custom views presented.
+
+Hopefully these extensions are helpful.
+
