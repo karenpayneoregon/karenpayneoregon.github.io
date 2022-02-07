@@ -113,6 +113,26 @@
                     document.getElementsByTagName("head")[0].appendChild(link);
                 }
             }
+
+            const personData = 
+            {
+                firstName: 'Karen', 
+                lastName: 'Payne', 
+                birthMonth: 'September',
+                twitterHandle: '@KarenPayneMVP',
+                address: {
+                    city: 'Mc Minnville'
+                }
+            };
+
+            const { birthMonth, address, twitterHandle, ...rest } = personData;
+
+            console.log(rest);
+            console.log(`Name: ${rest.firstName} ${rest.lastName}`);
+            console.log(`Month: ${birthMonth}`);
+            console.log(`City: ${address.city}`);
+            console.log(`Twitter: ${twitterHandle}`)
+
         </script>
     </body>
 
