@@ -51,7 +51,7 @@ h1:hover {
     background-size: 100% 2px;
 }
 
-/* h2 {
+h2 {
     color: rgb(0, 139, 139);
     text-transform: uppercase;
     display: inline-block;
@@ -71,7 +71,7 @@ h1:hover {
 
 h2:hover {
     background-size: 100% 2px;
-} */
+}
 
 .snackbar_circle {
     border-radius: 13px;
