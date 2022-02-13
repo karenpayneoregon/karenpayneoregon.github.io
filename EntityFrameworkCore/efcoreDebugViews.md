@@ -20,3 +20,22 @@ These examples are based on the following [NorthWind](https://gist.github.com/ka
 In most NorthWind databases, dates are before 2000. So we want to change the dates to the current century.
 
 Create a reference dictionary
+
+```csharp
+/// <summary>
+/// Reference table for replacing years in the three date columns/properties
+/// </summary>
+private static Dictionary<int, int> YearsReplaceDictionary => new()
+{
+    [1990] = 2000,
+    [1991] = 2001,
+    [1992] = 2002,
+    [1993] = 2003,
+    [1994] = 2004,
+    [1995] = 2005,
+    [1996] = 2006,
+    [1998] = 2008,
+    [1999] = 2009
+};
+```
+
