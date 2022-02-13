@@ -454,3 +454,83 @@ namespace YourNamespace.LanguageExtensions
 ```
 
 
+# Language extensions for custom views
+
+```csharp
+public static class ListExtensions
+{
+    public static bool Has(this string sender, string[] items)
+    {
+        foreach (var item in items)
+        {
+            if (sender.Contains(item, StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+    public static List<List<T>> ChunkBy<T>(this List<T> source, int chunkSize)
+        => source
+            .Select((value, index) => new { Index = index, Value = value })
+            .GroupBy(x => x.Index / chunkSize)
+            .Select(grp => grp.Select(v => v.Value).ToList())
+            .ToList();
+}
+```
+
+# Helpers for working with properties
+
+The method `PropertiesCount` can be used to define `chunk size` for
+
+
+```csharp
+public static string CustomViewByChunks(this DebugView sender, string[] includeTokens, string[] excludeTokens, int chunkSize)
+```
+
+Example for `Orders` model.
+
+```csharp
+UtilityHelpers.GetProperties(typeof(Order));
+```
+
+
+```csharp
+    public class UtilityHelpers
+    {
+        public static void GetProperties(Type t)
+        {
+            
+
+            foreach (PropertyInfo p in t.GetProperties())
+            {
+                string propertyName = p.Name;
+                Debug.WriteLine($"{p.Name}, {p.PropertyType}");
+
+            }
+
+            Debug.WriteLine(typeof(Order).GetProperties().Length);
+
+        }
+
+        public static int PropertiesCount(Type t)
+        {
+            return t.GetProperties().Length;
+        }
+
+        public static string GetPropertyNameArray(Type t, string varName) 
+            => $"var {varName} = new[] {{{string.Join(",", t.GetProperties().Select(propInfo => $"\"{propInfo.Name}\"").ToArray())}}};";
+    }
+ ```
+
+# Summary
+
+Language extensions have been presented to provide a more condensed view of data being tracked by EF Core change tracker, customized to your specific needs prior to saving data back to the database for a first run or when a save fails to work as expected.
+
+Other options are to setup logging in your DbContext to expose the underlying SQL. And of course writing unit test with in-memory database, SqlLite or by mocking data.
+
+And keep in mind that the views provided may change down the road, if so roll with them or modify the custom views presented.
+
+Hopefully these extensions are helpful.
