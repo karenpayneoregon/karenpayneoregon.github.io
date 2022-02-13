@@ -94,3 +94,26 @@ private static Dictionary<int, int> YearsReplaceDictionary => new()
 
 Or we could avoid a missing year with the following. 
 
+If this is used make sure other developers on your team understand this code.
+
+```csharp
+Dictionary<int, int> YearsReplaceDictionary = Enumerable.Range(1990, 10)
+    .Select(index => new
+    {
+        Old = index,
+        New = index + 10
+    })
+    .ToDictionary(item => item.Old, item => item.New);
+```    
+
+
+Run the code again and all is good, we can now save changes.
+
+```csharp
+await context.SaveChangesAsync();
+```
+
+Now we could also write a query with a data provider to get a count of the years and compare against the return value of SaveChangesAsync for validation too. The advantage of a view be it ShortView, LongView or custom view is we can visually inspect the data.
+
+Here is the extension used above.
+
