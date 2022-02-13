@@ -243,3 +243,11 @@ public static string CustomViewByChunks(this DebugView sender, string[] includeT
 }
 ```
 
+## ShortView
+
+![shortView.png](shortView.png)
+
+## LongView
+
+![shortView.png](longView.png)
+
