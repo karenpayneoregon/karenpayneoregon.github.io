@@ -480,3 +480,19 @@ public static class ListExtensions
             .ToList();
 }
 ```
+
+# Helpers for working with properties
+
+The method `PropertiesCount` can be used to define `chunk size` for
+
+
+```csharp
+public static string CustomViewByChunks(this DebugView sender, string[] includeTokens, string[] excludeTokens, int chunkSize)
+```
+
+Example for `Orders` model.
+
+```csharp
+UtilityHelpers.GetProperties(typeof(Order));
+```
+
