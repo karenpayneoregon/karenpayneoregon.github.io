@@ -117,3 +117,51 @@ Now we could also write a query with a data provider to get a count of the years
 
 Here is the extension used above.
 
+```csharp
+public static string OrdersDatesOnlyView(this DebugView sender)
+{
+    var longViewLines = sender.LongView
+        .Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+
+    StringBuilder builder = new();
+
+    foreach (var line in longViewLines)
+    {
+        if (line.Contains("OrderId", StringComparison.OrdinalIgnoreCase) || 
+            line.Contains("Date", StringComparison.OrdinalIgnoreCase))
+        {
+            builder.AppendLine(line);
+        }
+    }
+
+    return builder.ToString();
+
+}
+```
+
+Then if we need one for Customer operations we create another extension
+
+```csharp
+public static string CustomerNameChangeView(this DebugView sender)
+{
+    var longViewLines = sender
+        .LongView.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+
+    StringBuilder builder = new();
+    string[] tokens = { "CustomerId", "was", "CompanyName" };
+
+    foreach (var line in longViewLines)
+    {
+
+        if ( line.Has(tokens))
+        {
+            builder.AppendLine(line);
+        }
+        
+    }
+
+    return builder.ToString();
+
+}
+```
+
