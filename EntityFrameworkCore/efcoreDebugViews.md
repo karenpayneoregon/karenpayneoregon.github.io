@@ -2,6 +2,8 @@
 
 ![assets/debug1.png](debug1.png)
 
+[Full source](https://github.com/karenpayneoregon/deconstructing-samples)
+
 One of the nice features in EF Core 5 is ShortView and LongView from [DbContext.ChangeTracker.DebugView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.changetracker.debugview?view=efcore-5.0)
 
 Which permits a human-readable view of entities being tracked.
