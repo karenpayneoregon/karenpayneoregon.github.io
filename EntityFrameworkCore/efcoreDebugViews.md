@@ -67,3 +67,30 @@ if (orderList[index].RequiredDate.HasValue)
     }
 }
 ```
+
+Outside of the for statement we use an extension method to view changes
+
+```csharp
+Debug.WriteLine(context.ChangeTracker.DebugView.OrdersDatesOnlyView());
+```
+
+Which is an easy to read view and notice one year is not being updated, 1997. So we see the code looks good then notice there is no key in the dictionary for 1997 and add it.
+
+```csharp
+private static Dictionary<int, int> YearsReplaceDictionary => new()
+{
+    [1990] = 2000,
+    [1991] = 2001,
+    [1992] = 2002,
+    [1993] = 2003,
+    [1994] = 2004,
+    [1995] = 2005,
+    [1996] = 2006,
+    [1997] = 2007,
+    [1998] = 2008,
+    [1999] = 2009
+};
+```
+
+Or we could avoid a missing year with the following. 
+
