@@ -1,2 +1,22 @@
 # Entity Framework Core Debug view
 
+![assets/debug1.png](debug1.png)
+
+One of the nice features in EF Core 5 is ShortView and LongView from [DbContext.ChangeTracker.DebugView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.changetracker.debugview?view=efcore-5.0)
+
+Which permits a human-readable view of entities being tracked.
+
+We can take this output and return only information which specific to what we want to view.
+
+## Important
+Before continuing, understand the code which follows may not work as expected if and when the views change from current implementation to a future implementation. Even if the implementation for the views change a developer can alter the code below to match new implementation of these views.
+
+# Examples
+These examples are based on the following [NorthWind](https://gist.github.com/karenpayneoregon/7a4ba781b7884be8aa88112260c154a4) database for SQL-Server, similarly using the Oracle version of [NorthWind](https://gist.github.com/karenpayneoregon/f3a6693dee67c528e5c4371f65675c9a) will work too.
+
+
+# Change order date, required date and shipped date
+
+In most NorthWind databases, dates are before 2000. So we want to change the dates to the current century.
+
+Create a reference dictionary
