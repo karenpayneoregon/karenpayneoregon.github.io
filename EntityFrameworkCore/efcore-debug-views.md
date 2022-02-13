@@ -565,7 +565,7 @@ UtilityHelpers.GetProperties(typeof(Order));
         public static string GetPropertyNameArray(Type t, string varName) 
             => $"var {varName} = new[] {{{string.Join(",", t.GetProperties().Select(propInfo => $"\"{propInfo.Name}\"").ToArray())}}};";
     }
-    ```
+ ```
 
 # Summary
 
