@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8' />
+        <title></title>
+        <title>Coding better part-1</title>
+
+        <script src="bootstrap-5.1.3/jquery3.0.0.0/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="bootstrap-5.1.3/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3/main1.css">
+        <script src="bootstrap-5.1.3/js/bootstrap.js"></script>
+        <!-- <link rel="stylesheet" href="bootstrap-5.1.3/css/offCanvas.css"> -->
+    </head>
+
+    <body>
+
+            <div class="row no-gutters mb-2 bg-success">
+
+                <div class="col-12">
+                    <div class="d-flex justify-content-center border-bottom w-100">
+                        <img src="assets/header.png" class="pl-lg-5">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h1 class="mb-3">code better part-1</h1><br>
+
+        <div class="m-4">
+
+            <div class="accordion" id="mainAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Introduction</button>
+                    </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+
+                        <div class="card-body">
+                            <div id="section-1-placeholder"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Lesson 1</button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#mainAccordion">
+                        <div class="card-body">
+                            <div id="section-2-placeholder"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Coming soon</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+                        <div class="card-body">
+                            <p>
+                                Coming soon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function (e) {
+
+                //$("#section-2-placeholder").load("section2.html");
+                $("#section-1-placeholder").load("section1.html");
+
+
+            });
+        </script>
+    </body>
+
+</html>
