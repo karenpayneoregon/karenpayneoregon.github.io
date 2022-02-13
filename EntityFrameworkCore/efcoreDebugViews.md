@@ -165,3 +165,30 @@ public static string CustomerNameChangeView(this DebugView sender)
 }
 ```
 
+
+Both will work while they are hard-wired to specific words/tokens. Let's try going with a version which accepts words/tokens.
+
+```csharp
+public static string CustomView(this DebugView sender, string[] tokens)
+{
+    var longViewLines = sender
+        .LongView.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+
+    StringBuilder builder = new();
+
+    foreach (var line in longViewLines)
+    {
+
+        if (line.Has(tokens))
+        {
+            builder.AppendLine(line);
+        }
+
+    }
+
+    return builder.ToString();
+
+}
+```
+
+
