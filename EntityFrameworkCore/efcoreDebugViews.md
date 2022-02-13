@@ -192,3 +192,54 @@ public static string CustomView(this DebugView sender, string[] tokens)
 ```
 
 
+How about providing words/tokens to find and words/tokens to ignore? These two will do this along with providing the ability to chunk data. Chunking is done by getting a property count for a model and add 1.
+
+```csharp
+public static string CustomViewByChunks(this DebugView sender, string[] includeTokens, string[] excludeTokens, int chunkSize)
+{
+    var longViewLinesList = sender
+        .LongView.Split(new[] { Environment.NewLine }, StringSplitOptions.None)
+        .ToList();
+
+    var chunks = longViewLinesList.ChunkBy(chunkSize);
+
+    StringBuilder builder = new();
+
+    foreach (var chunk in chunks)
+    {
+        foreach (var item in chunk)
+        {
+            if (item.Has(includeTokens) && !item.Has(excludeTokens))
+            {
+                builder.AppendLine(item);
+            }
+        }
+    }
+
+    return builder.ToString();
+}
+public static string CustomViewByChunks(this DebugView sender, string[] includeTokens, int chunkSize)
+{
+    var longViewLinesList = sender
+        .LongView.Split(new[] { Environment.NewLine }, StringSplitOptions.None)
+        .ToList();
+
+    var chunks = longViewLinesList.ChunkBy(chunkSize);
+
+    StringBuilder builder = new();
+
+    foreach (var chunk in chunks)
+    {
+        foreach (var item in chunk)
+        {
+            if (item.Has(includeTokens))
+            {
+                builder.AppendLine(item);
+            }
+        }
+    }
+
+    return builder.ToString();
+}
+```
+
