@@ -1,6 +1,6 @@
 # Entity Framework Core Debug view
 
-![./assets/debug1.png](debug1.png)
+![assets/debug1.png](debug1.png)
 
 One of the nice features in EF Core 5 is ShortView and LongView from [DbContext.ChangeTracker.DebugView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.changetracker.debugview?view=efcore-5.0)
 
