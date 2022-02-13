@@ -39,3 +39,31 @@ private static Dictionary<int, int> YearsReplaceDictionary => new()
 };
 ```
 
+Get orders
+
+```csharp
+await using var context = new NorthwindContext();
+var orderList = await context.Orders.ToListAsync();
+```
+
+Iterate in a `for` statement, here just RequiredDate is shown
+
+```csharp
+if (orderList[index].RequiredDate.HasValue)
+{
+
+    if (YearsReplaceDictionary.ContainsKey(orderList[index].RequiredDate.Value.Year))
+    {
+
+        var currentRequiredDate = orderList[index].RequiredDate.Value;
+
+        var newRequiredDate = new DateTime(
+            YearsReplaceDictionary[orderList[index].RequiredDate.Value.Year],
+            currentRequiredDate.Month,
+            currentRequiredDate.Day);
+
+        orderList[index].RequiredDate = newRequiredDate;
+
+    }
+}
+```
