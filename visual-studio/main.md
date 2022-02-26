@@ -10,3 +10,5 @@
 - [Solution project locations](https://github.com/karenpayneoregon/karenpayneoregon.github.io/blob/master/visual-studio/Solution-project-locations.md)
 
 
+
+
