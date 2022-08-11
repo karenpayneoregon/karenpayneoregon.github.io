@@ -162,7 +162,7 @@
         </div>
 
 
-        <ul class="list-group">
+<!--         <ul class="list-group">
             <li class="list-group-item"><i class="bi bi-pin-angle"></i>David Copperfield</li>
             <li class="list-group-item"><i class="bi bi-check"></i>The Portrait of a Lady</li>
             <li class="list-group-item"><i class="bi bi-three-dots"></i> The Trial</li>
@@ -170,7 +170,7 @@
             <li class="list-group-item"><i class="bi bi-gear"></i> The Trial</li>
             <li class="list-group-item"><i class="bi bi-record2"></i> The Trial</li>
             <li class="list-group-item"><i class="bi bi-star"></i> The Trial</li>
-        </ul>
+        </ul> -->
 
 
 
@@ -194,6 +194,12 @@
                     $("#section-1-placeholder").load("/section1.html");
                     $("#section-2-placeholder").load("/section2.html");
                 });
+
+                let date = new Date(2020, 05, 21);
+
+                let longMonth = date.toLocaleString('en-us', { month: 'long' });
+
+                console.log(longMonth);
 
             });
         </script>
