@@ -483,7 +483,7 @@ public static class ListExtensions
 }
 ```
 
-# Helpers for working with properties
+# Helpers for working with properties 
 
 The method `PropertiesCount` can be used to define `chunk size` for
 
