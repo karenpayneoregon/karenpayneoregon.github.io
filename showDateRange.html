@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8' />
+        <title></title>
+        <title>Coding better part-1</title>
+
+        <script src="bootstrap-5.1.3/jquery3.0.0.0/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="bootstrap-5.1.3/css/bootstrap.css">
+        <script src="bootstrap-5.1.3/js/bootstrap.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container pt-lg-5">
+            <p>
+                Show div when between two dates
+            </p>
+            <div id="one">
+                <h6><span class="badge bg-success">Clock</span></h6>
+            </div>
+            <div id="two">
+                <h6><span class="badge bg-success">Other</span></h6>
+            </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function (e) {
+
+                clockChecker(new Date(2022, 10, 24));
+
+            });
+
+            function clockChecker(currentDate) {
+                currentDate = currentDate || new Date();
+                var startDate = new Date(2022, 10, 24);
+                var endDate = new Date(2022, 12, 24);
+
+                var marker = document.getElementById('one');
+
+                if (startDate <= currentDate && currentDate <= endDate) {
+                    marker.style.display = "";
+
+                } else {
+                    marker.style.display = "none";
+                }
+            }            
+        </script>
+    </body>
+
+</html>
